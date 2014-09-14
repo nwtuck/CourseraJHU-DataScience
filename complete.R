@@ -27,11 +27,11 @@ complete <- function(directory, id = 1:332) {
     this.file <- read.csv(paste(directory,"/", formatC(this.id, width=3, flag="0"), ".csv", sep=""))
     
     ## count number of complete cases in current file
-    total <- nrow(this.file[complete.cases(this.file),])
+    complete <- nrow(this.file[complete.cases(this.file),])
     
     ## add read data to dataframe complete.data and increase counter
     complete.data$id[counter] <- this.id
-    complete.data$nobs[counter] <- total
+    complete.data$nobs[counter] <- complete
     counter <- counter + 1
   }
   
