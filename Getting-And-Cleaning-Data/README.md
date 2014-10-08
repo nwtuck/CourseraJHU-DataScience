@@ -28,5 +28,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ##Assingment Instructions
 
 Create one R script called run_analysis.R that does the following: 
-
+- Merges the training and the test sets to create one dataset
+- Extracts only the measurements on the mean and standard deviation for each measurement
+- Uses descriptive activity names to name the activities in the data set
+- Appropriately labels the dataset with descriptive variable names
+- From the dataset in step 4, create a second, independent tidy dataset with the average of each variable for each activity and each subject
 
