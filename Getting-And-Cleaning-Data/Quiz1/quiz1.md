@@ -1,4 +1,4 @@
-Quiz1 
+#Quiz1 
 
 ##Question 1
  
@@ -20,7 +20,9 @@ data <- data.table(read.csv(f))
 
 nrow(subset(data, data$VAL == 24)) #VAL = 24, property value = $1000,000+
 
-// [1] 53
+```
+[1] 53
+```
 
 data[, .N, "VAL"] #summarize data by length of each VAL
 
