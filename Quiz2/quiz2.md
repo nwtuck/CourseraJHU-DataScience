@@ -33,11 +33,11 @@ output <- content(req)
 list(output[[4]]$name, output[[4]]$created_at)
 ```
 ```
-[[1]]
-[1] "datascientist"
+## [[1]]
+## [1] "datascientist"
 
-[[2]]
-[1] "2012-06-24T14:36:20Z"
+## [[2]]
+## [1] "2012-06-24T14:36:20Z"
 ```
 
 ##Question 2
@@ -67,6 +67,7 @@ query1 <- sqldf("select * from acs where AGEP < 50") ## selects all columns with
 ```
 ## Loading required package: tcltk
 ```
+```
 query2 <- sqldf("select pwgtp1 from acs where AGEP < 50")  ## correct syntax
 query3 <- sqldf("select * from acs")  ## selects everything
 query4 <- sqldf("select * from acs where AGEP < 50 and pwgtp1")  ## selects everything with age less than 50, "and pwgtp1" does not do anything
@@ -86,6 +87,7 @@ x <- unique(acs$AGEP)
 x1 <- sqldf("select distinct pwgtp1 from acs")
 x2 <- sqldf("select distinct AGEP from acs")
 x3 <- sqldf("select AGEP where unique from acs")
+```
 ```
 ## Error in sqliteSendQuery(con, statement, bind.data) : 
 ##   error in statement: near "unique": syntax error
